@@ -1,0 +1,7 @@
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+445/tcp  open  microsoft-ds
+
+Analysis:
+- Port 135 (MSRPC): Used for Windows services; should be restricted to internal networks
+- Port 445 (SMB): Common target for attacks; should be firewalled if not required
